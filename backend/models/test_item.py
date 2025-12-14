@@ -1,0 +1,9 @@
+# backend/models/test_item.py
+from sqlalchemy import Column, Integer, String
+from database import Base
+
+class TestItem(Base):
+    __tablename__ = "test_items"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)

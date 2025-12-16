@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [health, setHealth] = useState("unknown");
@@ -11,9 +12,18 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Supply Chain Planning System</h1>
-      <p>Backend health: {health}</p>
+    <div className="app-container">
+      <div className="sidebar">
+        <h2>SC Planning</h2>
+        <div className="nav-item">Dashboard</div>
+        <div className="nav-item">Integration</div>
+        <div className="nav-item">Forecasting</div>
+        <div className="nav-item">Supply Planning</div>
+      </div>
+      <div className="content">
+        <h1>Dashboard</h1>
+        <p>Backend health: {health}</p>
+      </div>
     </div>
   );
 }

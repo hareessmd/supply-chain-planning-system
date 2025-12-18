@@ -5,8 +5,14 @@ from sqlalchemy import pool
 
 from alembic import context
 
+from models.master import Product, Location, Customer, Resource, CalendarWeek
+
 import os
 import sys
+from pathlib import Path
+
+# Add the backend/ directory to Python import path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 # Add backend root to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/..")

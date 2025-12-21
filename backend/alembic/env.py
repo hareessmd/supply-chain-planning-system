@@ -6,6 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from models.master import Product, Location, Customer, Resource, CalendarWeek
+from models.raw import RawSalesOrder, RawInventory
 
 import os
 import sys

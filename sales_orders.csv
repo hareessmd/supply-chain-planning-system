@@ -1,0 +1,3 @@
+document_type,document_number,item_number,material_code,plant_code,customer_code,posting_date,order_qty,order_uom,order_value,currency
+OR,1000001,10,P001,PLANT1,CUST1,2024-01-01,100,EA,1000,USD
+OR,1000002,10,P002,PLANT1,CUST2,2024-01-02,150,EA,1500,USD

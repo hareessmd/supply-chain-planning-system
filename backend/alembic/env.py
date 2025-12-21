@@ -7,6 +7,7 @@ from alembic import context
 
 from models.master import Product, Location, Customer, Resource, CalendarWeek
 from models.raw import RawSalesOrder, RawInventory
+from models.planning import DemandHistory, InventoryPosition
 
 import os
 import sys
